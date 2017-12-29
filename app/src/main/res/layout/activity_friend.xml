@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#ff8c9ab4"
+    android:clickable="false">
+
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="300dp"
+        android:id="@+id/friend_image"
+        android:src="@drawable/aki"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/m1_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yukii"
+        android:id="@+id/friend_name"
+        android:textSize="30dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_above="@+id/friend_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"
+        android:layout_alignStart="@+id/m2_button"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="いいね"
+        android:id="@+id/m1_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="がんばれ！"
+        android:id="@+id/m2_button"
+        android:layout_alignTop="@+id/m1_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ダメね。"
+        android:id="@+id/m3_button"
+        android:singleLine="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Count"
+        android:id="@+id/friend_total_count"
+        android:layout_below="@+id/friend_day_count"
+        android:layout_alignStart="@+id/m3_button"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Day Count"
+        android:id="@+id/friend_day_count"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/friend_image"
+        android:layout_alignStart="@+id/m3_button" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/friend_image"
+        android:layout_alignStart="@+id/friend_image"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
